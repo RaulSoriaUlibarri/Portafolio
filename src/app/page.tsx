@@ -1,8 +1,9 @@
+import Navbar from "@/components/NavBar";
 
 export default function Home() {
   return (
     <div>
-      First steps
+      <Navbar/>
     </div>
   );
 }

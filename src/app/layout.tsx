@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Provider } from "@/components/ui/provider"
 import { ThemeProvider } from "@/theme/ThemeProvider";
 
 export const metadata: Metadata = {
@@ -18,7 +17,7 @@ export default function RootLayout({
       <body
       >
         <ThemeProvider>
-          <Provider>{children}</Provider>
+          {children}
         </ThemeProvider>
       </body>
     </html>

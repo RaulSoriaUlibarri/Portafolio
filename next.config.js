@@ -1,10 +1,11 @@
-// next.config.js
+const createNextIntlPlugin = require('next-intl/plugin');
+const withNextIntl = createNextIntlPlugin();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
     optimizePackageImports: ["@chakra-ui/react"],
   },
-  // aquí puedes añadir otras opciones de Next.js
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);
